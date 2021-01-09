@@ -1,0 +1,137 @@
+.products__promo {
+  margin: 50px 0;
+}
+
+.products__promoCaption {
+  text-align: left;
+  color: #505061;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 20px 0 10px;
+}
+
+.products__promoListing {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -33px;
+}
+
+.products__productWrapper {
+  padding: 15px 33px;
+  /*width: calc(25% - 66px);*/
+}
+
+.products__product {
+  position: relative;
+  width: 245px;
+  height: 420px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.products__productCaption {
+  text-align: center;
+}
+
+.products__productDescription {
+  display: -webkit-box;
+  word-break: break-word;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: #505061;
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 29px;
+}
+
+.products__buyBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.products__productPrice {
+  font-size: 19px;
+  color: #6a6a77;
+  line-height: 34px;
+}
+
+.products__boxCounterPrice {
+  display: flex;
+}
+
+.products__boxCounter {
+  position: relative;
+  width: 50%;
+}
+
+.products__boxPrice {
+  width: 50%;
+}
+
+@media (max-width: 575.98px) {
+  .products__product {
+    width: 317px;
+  }
+
+  .products__product {
+    height: 421px;
+    padding: 23px;
+  }
+
+  .products__productWrapper {
+    padding: 15px 129px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .products__product {
+    width: 317px;
+  }
+
+  .products__product {
+    height: 421px;
+    padding: 23px;
+  }
+
+  .products__productWrapper {
+    padding: 15px 17px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .products__product {
+    padding: 20px;
+    width: 312px;
+  }
+
+  .products__product {
+    padding: 15px 47px;
+  }
+
+  .products__productWrapper {
+    padding: 15px 59px;
+    width: 254px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .products__product {
+    width: 262px;
+  }
+
+  .products__productWrapper {
+    padding: 15px 29px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products__product {
+    width: 245px;
+  }
+}

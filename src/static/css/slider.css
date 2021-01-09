@@ -1,0 +1,63 @@
+.slider__wrapper {
+  position: relative;
+  max-width: 1200px;
+  height: 300px;
+}
+
+.slider__display {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider__banner {
+  transition-property: margin;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.slider__image {
+  max-width: 1200px;
+}
+
+.slider__button {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.slider__button:focus {
+  outline: none;
+}
+
+.slider__button_left {
+  left: 0;
+}
+
+.slider__button_right {
+  right: 0;
+}
+
+.slider__buttonOverlay {
+  height: inherit;
+  width: inherit;
+  opacity: 0.6;
+}
+
+.slider__button:hover .slider__buttonOverlay {
+  background: #fff;
+}
+
+.slider__buttonText {
+  display: block;
+  font-size: 50px;
+  line-height: 60px;
+  color: #505061;
+
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 12px);
+}

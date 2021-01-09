@@ -1,0 +1,92 @@
+.header__wrapper {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+}
+
+.header__phone > svg {
+  fill: #dadada;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.header__phone:hover,
+.header__phone:hover > svg {
+  color: #822f37;
+  fill: #822f37;
+}
+
+.header__phone_icon > svg {
+  fill: #dadada;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.header__phone_icon:hover,
+.header__phone_icon:hover > svg {
+  color: #822f37;
+  fill: #822f37;
+}
+
+.header__sliderDots {
+  text-align: center;
+}
+
+.header__dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #ddd;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.header__dot_active {
+  background-color: #aaa;
+}
+
+.phone__body {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 169px;
+  padding: 20px;
+  z-index: 5;
+  top: 160px;
+  left: 170px;
+  border: 4px double #d3d3d3;
+  border-radius: 12px;
+}
+.header__phone_icon {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .header__phone_icon {
+    display: block;
+  }
+  .header__phone_icon > svg {
+    margin-top: 10px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header__wrapper {
+    height: 150px;
+  }
+  .phone__body {
+    top: 186px;
+    left: 52px;
+  }
+}

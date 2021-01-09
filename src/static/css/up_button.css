@@ -1,0 +1,24 @@
+.up_button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 200;
+  background-color: #e61234;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  width: 100px;
+  height: 60px;
+  border: 1px solid #e61234;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 17px;
+}
+.up_button:hover {
+  background-color: #ee2444;
+  border: 1px solid #ee2444;
+  cursor: pointer;
+}
+.up_button:focus {
+  outline: none;
+}

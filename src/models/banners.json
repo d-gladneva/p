@@ -1,0 +1,22 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "priority": 1,
+      "name": "slide1.jpg",
+      "link": ""
+    },
+    {
+      "id": 2,
+      "priority": 2,
+      "name": "slide2.jpg",
+      "link": ""
+    },
+    {
+      "id": 3,
+      "priority": 3,
+      "name": "slide3.jpg",
+      "link": ""
+    }
+  ]
+}

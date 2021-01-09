@@ -1,0 +1,499 @@
+{
+  "head": {
+    "total": 4
+  },
+  "list": [
+    {
+      "id": 1,
+      "title": "БАВАРСКАЯ",
+      "description": "сыр моцарелла, баварские колбаски, маринованные огурчики, маслины, горчица, томаты",
+      "image": "bavarskaya.jpg",
+      "price": 560,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 2,
+      "title": "4 СЫРА",
+      "description": "сыр моцарелла, сыр чеддер, сыр дор блю, сыр пармезан",
+      "image": "chetyre-syra.jpg",
+      "price": 590,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 3,
+      "title": "ФИЛАДЕЛЬФИЯ",
+      "description": "сыр моцарелла, свежий лосось, творожный сыр, руккола",
+      "image": "filadelfia.jpg",
+      "price": 590,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 4,
+      "title": "ГАВАЙСКАЯ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "gavaiskaya.jpg",
+      "price": 530,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 5,
+      "title": "КУРИЦА ТЕРИЯКИ",
+      "description": "сыр моцарелла, томаты, цыпленок, болгарский перец, соус терияки, кунжут",
+      "image": "kurica-teriyaki.jpg",
+      "price": 550,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 6,
+      "title": "МАРГАРИТА",
+      "description": "сыр моцарелла, соус из томатов",
+      "image": "margarita.jpg",
+      "price": 390,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 7,
+      "title": "МЕКСИКАНСКАЯ**(острая)",
+      "description": "сыр моцарелла, цыпленок, болгарский перец, лук красный, острый перец халапеньо, соус сальса",
+      "image": "meksikanskaya.jpg",
+      "price": 560,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 8,
+      "title": "МЯСНАЯ ОТ ШЕФА",
+      "description": "сыр моцарелла, цыпленок, ветчина, баварские колбаски, бекон, томаты, соус шрирача",
+      "image": "myasnaya-ot-shefa.jpg",
+      "price": 750,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 9,
+      "title": "МЯСНОЕ АССОРТИ",
+      "description": "сыр моцарелла, ветчина, колбаска пепперони, цыпленок, томаты",
+      "image": "myasnoe-assorti.jpg",
+      "price": 580,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 10,
+      "title": "ОВОЩНАЯ",
+      "description": "сыр моцарелла, томаты, болгарский перец, шампиньоны, руккола",
+      "image": "ovoschnaya.jpg",
+      "price": 460,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 11,
+      "title": "ПЕППЕРОНИ",
+      "description": "сыр моцарелла, колбаски пепперони",
+      "image": "pepperoni.jpg",
+      "price": 440,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 12,
+      "title": "САЛЬСА",
+      "description": "сыр моцарелла, колбаска пепперони, шампиньоны, соус сальса",
+      "image": "salsa.jpg",
+      "price": 580,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 13,
+      "title": "СЛИВОЧНАЯ КРЕВЕТКА",
+      "description": "сыр моцарелла, орегано, креветки, сливки, руккола, чеснок",
+      "image": "slivochnaya.jpg",
+      "price": 590,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 14,
+      "title": "ПИЦЦА С ТУНЦОМ",
+      "description": "сыр моцарелла, маслины, тунец консервированный, лук красный",
+      "image": "s-tuncom.jpg",
+      "price": 560,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 15,
+      "title": "ВЕТЧИНА И ГРИБЫ",
+      "description": "сыр моцарелла, ветчина, шампиньоны",
+      "image": "vetchina-i-griby.jpg",
+      "price": 460,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 16,
+      "title": "ЦЫПЛЕНОК BBQ",
+      "description": "сыр моцарелла, томаты, цыпленок, ветчина, шампиньоны, соус BBQ",
+      "image": "zyplenok-BBQ.jpg",
+      "price": 580,
+      "category": {
+        "id": 1,
+        "name": "category 1"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 17,
+      "title": "ФИЛАДЕЛЬФИЯ БИГ",
+      "description": "творожный сыр, рис, нори, свежий лосось, авокадо",
+      "image": "big-filadelphia.jpg",
+      "price": 340,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 18,
+      "title": "БОСТОН",
+      "description": "творожный сыр, рис, нори, угорь, кунжут",
+      "image": "boston.jpg",
+      "price": 240,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 19,
+      "title": "ФИЛАДЕЛЬФИЯ КЛАССИЧЕСКАЯ",
+      "description": "творожный сыр, рис, нори, свежий лосось",
+      "image": "filadelfia_classic.jpg",
+      "price": 300,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 20,
+      "title": "ФИЛАДЕЛЬФИЯ ЛЮКС",
+      "description": "творожный сыр, рис, нори, свежий лосось, авокадо",
+      "image": "filadelfia-lux.jpg",
+      "price": 550,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 21,
+      "title": "ФИЛАДЕЛЬФИЯ С ОГУРЦОМ",
+      "description": "творожный сыр, свежий лосось, огурец",
+      "image": "filadelfia-s-ogurcom.jpg",
+      "price": 300,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 22,
+      "title": "ИНЬ-ЯНЬ (5шт)",
+      "description": "творожный сыр, рис, нори, тунец, огурец, икра тобико",
+      "image": "in-yan.jpg",
+      "price": 240,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 23,
+      "title": "КАЛИФОРНИЯ С ЛОСОСЕМ",
+      "description": "майонез, рис, нори, свежий лосось, огурец, икра тобико",
+      "image": "kalifornia-s-losossem.jpg",
+      "price": 340,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 24,
+      "title": "КАНАДА",
+      "description": "творожный сыр, рис, нори, угорь, авокадо, соус унаги, кунжут",
+      "image": "kanada.jpg",
+      "price": 340,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 25,
+      "title": "КАРОЛИНА",
+      "description": "творожный сыр, рис, нори, огурец, креветки, лосось",
+      "image": "karolina.jpg",
+      "price": 340,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 26,
+      "title": "КРЕВЕТКА ЛЮКС",
+      "description": "творожный сыр, рис, нори, креветки, авокадо, кунжут",
+      "image": "krevetka-plus.jpg",
+      "price": 530,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 27,
+      "title": "ЛОСОСЬ-АВОКАДО",
+      "description": "рис, нори, свежий лосось, авокадо",
+      "image": "losos-avokado.jpg",
+      "price": 220,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 28,
+      "title": "МЕКСИКА",
+      "description": "творожный сыр, рис, нори, тунец, огурец, томаты, спайс-соус",
+      "image": "meksika.jpg",
+      "price": 220,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 29,
+      "title": "НЕЖНОСТЬ",
+      "description": "творожный сыр, рис, нори, свежий лосось, спайс-соус",
+      "image": "nejnost.jpg",
+      "price": 280,
+      "category": {
+        "id": 2,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 30,
+      "title": "Item 12",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "tigrovye.jpg",
+      "price": 200,
+      "category": {
+        "id": 2,
+        "name": "category 3"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 31,
+      "title": "Item 12",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "zhemchuzhina.jpg",
+      "price": 200,
+      "category": {
+        "id": 2,
+        "name": "category 3"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 32,
+      "title": "ЛОСОСЬ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "roll-s-lososem.jpg",
+      "price": 200,
+      "category": {
+        "id": 3,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 33,
+      "title": "ТУНЕЦ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "roll-s-tuncom.jpg",
+      "price": 200,
+      "category": {
+        "id": 3,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 34,
+      "title": "УГОРЬ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "roll-s-ugrem.jpg",
+      "price": 200,
+      "category": {
+        "id": 3,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 35,
+      "title": "ОГУРЕЦ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "roll-s-ogurtsom.jpg",
+      "price": 200,
+      "category": {
+        "id": 3,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 36,
+      "title": "АВОКАДО",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "roll-s-avokado.jpg",
+      "price": 200,
+      "category": {
+        "id": 3,
+        "name": "category 2"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 37,
+      "title": "СПАЙС-СУШИ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "spice-sushi.jpg",
+      "price": 200,
+      "category": {
+        "id": 4,
+        "name": "category 3"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 38,
+      "title": "ЛОСОСЬ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "sushi-s-lososem.jpg",
+      "price": 200,
+      "category": {
+        "id": 4,
+        "name": "category 3"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 39,
+      "title": "КРЕВЕТКА",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "sushi-s-krevetkami.jpg",
+      "price": 200,
+      "category": {
+        "id": 4,
+        "name": "category 3"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 40,
+      "title": "ТУНЕЦ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "sushi-s-tuncom.jpg",
+      "price": 200,
+      "category": {
+        "id": 4,
+        "name": "category 3"
+      },
+      "quantity": 10
+    },
+    {
+      "id": 41,
+      "title": "УГОРЬ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "image": "sushi-s-ugrem.jpg",
+      "price": 200,
+      "category": {
+        "id": 4,
+        "name": "category 3"
+      },
+      "quantity": 10
+    }
+  ]
+}

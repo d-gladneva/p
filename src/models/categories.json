@@ -1,0 +1,9 @@
+{
+  "head": { "total": 4 },
+  "list": [
+    { "id": 1, "name": "Пицца", "code": "pizza" },
+    { "id": 2, "name": "Роллы", "code": "rolly" },
+    { "id": 3, "name": "Классические роллы", "code": "classicRolly" },
+    { "id": 4, "name": "Суши", "code": "sushi" }
+  ]
+}

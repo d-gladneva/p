@@ -1,0 +1,56 @@
+.counter__wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.counter__button {
+  position: absolute;
+  background-color: #e61234;
+  text-align: center;
+  border: none;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+
+.counter__button:focus {
+  outline: none;
+}
+
+.counter__button:hover {
+  background-color: #ee2444;
+}
+
+.counter__buttonIncrease {
+  right: 0;
+  border-top: 1px solid #e61234;
+  border-right: 1px solid #e61234;
+  border-bottom: 1px solid #e61234;
+}
+
+.counter__buttonDecrease {
+  left: 0;
+  border-top: 1px solid #e61234;
+  border-left: 1px solid #e61234;
+  border-bottom: 1px solid #e61234;
+}
+
+.counter__input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 30px;
+  border: 1px solid #e9e9e9;
+  font-size: 20px;
+  text-align: center;
+  color: #505061;
+}
+
+.counter__input:focus {
+  outline: none;
+}
