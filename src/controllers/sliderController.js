@@ -32,13 +32,13 @@
         </a>`
     );
 
-  // const rotation = () => {
-  //   setInterval(() => {
-  //     arrowRight();
-  //   }, 5000);
-  // };
-  //
-  // rotation();
+  const rotation = () => {
+    setInterval(() => {
+      arrowRight();
+    }, 5000);
+  };
+
+  rotation();
 
   const showButton = () => {
     display < 2
