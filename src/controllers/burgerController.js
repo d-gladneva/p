@@ -1,4 +1,4 @@
-const burger = () => {
+const phone = () => {
   const phoneBody = document.querySelector('#phoneBody');
   let f = false;
   if (document.documentElement.clientWidth < 768) {
@@ -21,8 +21,8 @@ const burger = () => {
   }
 };
 
-burger();
+phone();
 
 window.addEventListener('resize', () => {
-  burger();
+  phone();
 });

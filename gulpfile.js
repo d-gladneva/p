@@ -24,7 +24,8 @@ const cssFiles = [
   './src/static/css/modal.css',
   './src/static/css/order.css',
   './src/static/css/tooltip.css',
-  './src/static/css/up_button.css'
+  './src/static/css/up_button.css',
+  './src/static/css/nav.css'
 ];
 
 const jsFiles = [
@@ -44,7 +45,8 @@ const jsFiles = [
   './src/controllers/cartController.js',
   './src/controllers/upButtonController.js',
   './src/controllers/navigationScrollController.js',
-  './src/controllers/burgerMenuController.js'
+  './src/controllers/phoneMenuController.js',
+  './src/controllers/openPopupMenu.js',
 ];
 
 const imageFiles = ['./src/static/images/**/*'];
