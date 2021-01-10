@@ -28,9 +28,9 @@
   function changeColor() {
     for (let i = 0; i < sections.length; i++) {
       if (
-        sections[i].getBoundingClientRect().y <= 130 &&
+        sections[i].getBoundingClientRect().y <= 175 &&
         sections[i].getBoundingClientRect().y >
-          130 - sections[i].getBoundingClientRect().height - 50
+          175 - sections[i].getBoundingClientRect().height - 50
       ) {
         navLinks[i].style.color = '#822f37';
       } else {

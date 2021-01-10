@@ -1,4 +1,4 @@
-const smoothScrollFromMenu = () => {
+{const smoothScrollFromMenu = () => {
   const navigationHeight = document.querySelector('.header__wrapper')
     .offsetHeight;
   console.log(navigationHeight);
@@ -10,7 +10,7 @@ const smoothScrollFromMenu = () => {
   const scrollToTarget = (e) => {
     let target = e.target;
     target = target.closest('.test');
-    let targetId = target.getAttribute('to');
+    let targetId = target.getAttribute('the');
     console.log(targetId);
     if (target) {
       const targetTo = document.getElementById(targetId.substring(1, targetId.length));
@@ -30,4 +30,5 @@ const smoothScrollFromMenu = () => {
 };
 
 smoothScrollFromMenu();
+}
 

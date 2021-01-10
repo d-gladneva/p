@@ -1,33 +1,49 @@
+.modal__contentWrapper {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-areas:
+      'modalCaption modalCaption'
+      'modalImg modalInfoBox'; */
+  /* grid-gap: 30px; */
+}
+
+.modal__image {
+  /* grid-area: modalImg; */
+  width: 80%;
+  /* margin: 0 auto; */
+  height: 50%;
+  display: block;
+}
+
+.modal__content {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 80%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: auto;
+  -webkit-animation-name: animatetop;
+  animation-name: animatetop;
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+}
+
 .modal__overlay {
   display: none;
   position: fixed;
   z-index: 1000;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.modal__content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 900px;
-  padding: 40px;
-  background-color: #fff;
-  border-radius: 5px;
-  margin: auto;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-}
-
-.modal__contentWrapper {
-  display: grid;
-  grid-template-areas: 'modalCaption modalCaption' 'modalImg modalInfoBox';
-  grid-gap: 30px;
+  background-color: rgba(0,0,0,.8);
 }
 
 .modal__caption {
@@ -35,10 +51,6 @@
   height: auto;
 }
 
-.modal__image {
-  grid-area: modalImg;
-  display: block;
-}
 
 .modal__infoBox {
   grid-area: modalInfoBox;
