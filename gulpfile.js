@@ -47,6 +47,7 @@ const jsFiles = [
   './src/controllers/navigationScrollController.js',
   './src/controllers/phoneMenuController.js',
   './src/controllers/openPopupMenu.js',
+  './src/controllers/smoothScrollFromMenu.js'
 ];
 
 const imageFiles = ['./src/static/images/**/*'];
