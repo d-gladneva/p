@@ -26,8 +26,6 @@
     padding: 18px;
     background-color: #fff;
     border-radius: 5px;
-    margin: auto;
-    margin-bottom: 62px;
     -webkit-animation-name: animatetop;
     animation-name: animatetop;
     -webkit-animation-duration: .4s;
@@ -36,9 +34,10 @@
 
 .modal__overlay {
     display: none;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     z-index: 1000;
-    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;

@@ -130,7 +130,7 @@
       return;
     }
 
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
     const productId = e.target.getAttribute('product-id');
     productStore.getProduct(+productId).then((product) => {
       const cartProduct = cartStore.getCartProduct(+productId);

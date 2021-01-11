@@ -311,7 +311,7 @@
         document.addEventListener('click', (e) => {
           let target = e.target;
           if (target && target.classList.contains('cart__buyButton')) {
-            myOrder.style.display = 'block';
+            myOrder.style.display = 'flex';
             orderIsOpen = true;
           } else {
             if (
