@@ -1,6 +1,5 @@
 const openBurger = () => {
   const popupMenu = document.querySelector('#popupMenu');
-  console.log(popupMenu);
   let f = false;
   if (document.documentElement.clientWidth < 768) {
     document.addEventListener('click', (e) => {
@@ -8,7 +7,6 @@ const openBurger = () => {
       if (!f) {
         target = target.closest('.navigation__burger');
         if (target && target.classList.contains('navigation__burger')) {
-          console.log(target);
           popupMenu.style.display = 'block';
           f = true;
         }

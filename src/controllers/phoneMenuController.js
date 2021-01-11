@@ -7,7 +7,6 @@ const phone = () => {
       if (!f) {
         target = target.closest('.header__phone_icon');
         if (target && target.classList.contains('header__phone_icon')) {
-          console.log(target);
           phoneBody.style.display = 'block';
           f = true;
         }

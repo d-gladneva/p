@@ -300,7 +300,6 @@
 
       document.body.addEventListener('submit', (event) => {
         event.preventDefault();
-        console.log(1);
         sendForm(event.target);
       });
 
@@ -327,7 +326,6 @@
               target.classList.contains('modal__close')
             ) {
               myOrder.style.display = 'none';
-              console.dir(target);
               orderIsOpen = false;
             }
           }
