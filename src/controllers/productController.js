@@ -2,26 +2,26 @@
   categoryStore.getCategories().then(({ head, list }) => {
     renderCategory(list);
     for (let i = 0; i < list.length; i++) {
-      const categoryId = 'category' + list[i].id;
+      const categoryId = "category" + list[i].id;
       productStore.getProducts(list[i].id).then(({ head, list }) => {
         document.getElementById(categoryId).innerHTML = renderProducts(
           list
-        ).join('');
+        ).join("");
       });
     }
   });
 
   const renderCategory = (categoryList) => {
-    document.getElementById('productsWrapper').innerHTML = categoryList
+    document.getElementById("productsWrapper").innerHTML = categoryList
       .map((category) => {
         return `
         <section class="products__promo" id="section${category.id}">
-          <h2 class="products__promoCaption" id="${category.code}">${category.name}</h2>
+          <h2 class="products__promoCaption" id="${category.code}">${category.title}</h2>
           <div class="products__promoListing" id="category${category.id}"></div>
         </section>
       `;
       })
-      .join('');
+      .join("");
   };
 
   const renderProducts = (prods) => {
@@ -36,9 +36,9 @@
         product.id
       }" product-id="${product.id}">
         <div class="products__product">
-          <img src="${ROUTES.productImage}/${PRODUCT_IMAGE_SIZE.small}/${
-      product.image
-    }" data-img="${product.image}">
+          <img src="${product.thumbnail.small}" data-img="${
+      product.thumbnail.small
+    }">
           <p class="global-caption products__productCaption">${
             product.title
           }</p>
@@ -48,8 +48,9 @@
           <div class="products__boxCounterPrice" price="${product.price}">
             <div class="products__boxCounter">
               <button class="counter__button counter__buttonIncrease">+</button>
-              <input class="counter__input" type="number" value="${product.count ||
-                1}">
+              <input class="counter__input" type="number" value="${
+                product.count || 1
+              }">
               <button class="counter__button counter__buttonDecrease">-</button>
             </div>
             <div class="products__boxPrice">
@@ -76,21 +77,21 @@
     `;
   };
 
-  const productsWrapper = document.getElementById('productsWrapper');
-  const tooltipCart = document.getElementById('tooltipCart');
+  const productsWrapper = document.getElementById("productsWrapper");
+  const tooltipCart = document.getElementById("tooltipCart");
 
   const showTooltipCart = () => {
-    tooltipCart.style.display = 'block';
+    tooltipCart.style.display = "block";
     setTimeout(hideTooltipCart, 1500);
   };
 
   const hideTooltipCart = () => {
-    tooltipCart.style.display = 'none';
+    tooltipCart.style.display = "none";
   };
 
   const setProductSum = (e, value) => {
-    const counterBox = e.target.closest('.products__boxCounterPrice');
-    const price = counterBox.getAttribute('price');
+    const counterBox = e.target.closest(".products__boxCounterPrice");
+    const price = counterBox.getAttribute("price");
 
     counterBox.children[1].children[0].children[0].innerText = cartStore.calculateProductSum(
       +price,
@@ -99,8 +100,8 @@
   };
 
   const HandelProductChange = (e) => {
-    const productWrapper = e.target.closest('.products__productWrapper');
-    const productId = productWrapper.getAttribute('product-id');
+    const productWrapper = e.target.closest(".products__productWrapper");
+    const productId = productWrapper.getAttribute("product-id");
     const hasInCart = cartStore.checkProduct(+productId);
 
     const value = Number(e.target.value);
@@ -115,18 +116,18 @@
 
     if (hasInCart) {
       cartStore.updateCartProduct(+productId, {
-        count: +e.target.value
+        count: +e.target.value,
       });
     }
 
-    document.getElementById('cartSum').innerText = String(
+    document.getElementById("cartSum").innerText = String(
       cartStore.getCartSum()
     );
   };
 
   const btnIncrease = (e) => {
-    const productWrapper = e.target.closest('.products__productWrapper');
-    const productId = productWrapper.getAttribute('product-id');
+    const productWrapper = e.target.closest(".products__productWrapper");
+    const productId = productWrapper.getAttribute("product-id");
     const hasInCart = cartStore.checkProduct(+productId);
 
     const countInput = e.target.nextElementSibling;
@@ -135,18 +136,18 @@
 
     if (hasInCart) {
       cartStore.updateCartProduct(+productId, {
-        count: +countInput.value
+        count: +countInput.value,
       });
     }
 
-    document.getElementById('cartSum').innerText = String(
+    document.getElementById("cartSum").innerText = String(
       cartStore.getCartSum()
     );
   };
 
   const btnDecrease = (e) => {
-    const productWrapper = e.target.closest('.products__productWrapper');
-    const productId = productWrapper.getAttribute('product-id');
+    const productWrapper = e.target.closest(".products__productWrapper");
+    const productId = productWrapper.getAttribute("product-id");
     const hasInCart = cartStore.checkProduct(+productId);
 
     const countInput = e.target.previousElementSibling;
@@ -160,30 +161,30 @@
 
     if (hasInCart) {
       cartStore.updateCartProduct(+productId, {
-        count: +countInput.value
+        count: +countInput.value,
       });
     }
 
-    document.getElementById('cartSum').innerText = String(
+    document.getElementById("cartSum").innerText = String(
       cartStore.getCartSum()
     );
   };
 
   const addProductInCart = (e) => {
-    const productWrapper = e.target.closest('.products__productWrapper');
-    const productId = productWrapper.getAttribute('product-id');
+    const productWrapper = e.target.closest(".products__productWrapper");
+    const productId = productWrapper.getAttribute("product-id");
     productStore.getProduct(+productId).then((product) => {
       const count = +productWrapper.children[0].children[3].children[0]
         .children[1].value;
 
       const productData = {
         ...product,
-        count
+        count,
       };
 
       cartStore.addCartProduct(productData);
 
-      document.getElementById('cartSum').innerText = String(
+      document.getElementById("cartSum").innerText = String(
         cartStore.getCartSum()
       );
 
@@ -193,13 +194,13 @@
 
   const HandelProductClick = (e) => {
     switch (e.target.className) {
-      case 'counter__button counter__buttonIncrease':
+      case "counter__button counter__buttonIncrease":
         btnIncrease(e);
         break;
-      case 'counter__button counter__buttonDecrease':
+      case "counter__button counter__buttonDecrease":
         btnDecrease(e);
         break;
-      case 'global-buttonPrimary':
+      case "global-buttonPrimary":
         addProductInCart(e);
         showTooltipCart(e);
         break;
@@ -210,6 +211,6 @@
 
   renderProductInstance(renderProduct);
 
-  productsWrapper.addEventListener('click', HandelProductClick);
-  productsWrapper.addEventListener('change', HandelProductChange);
+  productsWrapper.addEventListener("click", HandelProductClick);
+  productsWrapper.addEventListener("change", HandelProductChange);
 }
