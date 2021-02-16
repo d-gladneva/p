@@ -200,6 +200,7 @@
       <div><span class="modal__close" id="close">&times;</span></div>
       <form class="cart__form">
          <input class="cart__form_item" name="name" type="text" required placeholder="Ваше имя">
+         <input class="cart__form_item" name="email" type="text" required placeholder="Ваш email">
          <input class="cart__form_item" name="phone" type="text" required placeholder="Ваш телефон">
          <input class="cart__form_item" name="address" type="text" required placeholder="Ваш адрес">
       <button type="submit" class="global-buttonPrimary cart__buyButton cart__buyButton_order">Оформить заказ</button>
