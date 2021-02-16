@@ -208,11 +208,12 @@
 
       // отправка формы
 
+      const statusMessage = document.createElement("div");
+
       const sendForm = (elemWork) => {
         const errorMessage = "Что-то пошло не так...";
         const loadMessage = "Загрузка...";
         const succesMessage = "Спасибо! Мы скоро с Вами свяжемся!";
-        const statusMessage = document.createElement("div");
 
         statusMessage.style.cssText = `
           font-size: 1.5 rem;
@@ -226,7 +227,12 @@
 
         if (inputPhone.value !== "" || inputName.value !== "") {
           elemWork.appendChild(statusMessage);
+
           statusMessage.textContent = loadMessage;
+
+          setTimeout(() => {
+            statusMessage.delete();
+          }, 1000);
 
           const formData = new FormData(elemWork);
           let body = {};
@@ -239,10 +245,12 @@
               if (response.ok !== true) {
                 throw new Error("status network not 200");
               }
+              setTimeout(() => {
+                statusMessage.delete();
+              }, 1000);
               statusMessage.textContent = succesMessage;
-              if (statusMessage) {
-                statusMessage.nextElementSibling.remove();
-              }
+              console.log(statusMessage);
+
               for (let i = 0; i < inputFormElems.length; i++) {
                 inputFormElems[i].value = "";
               }
@@ -251,14 +259,16 @@
               }, 5000);
             })
             .catch((error) => {
-              if (statusMessage && statusMessage.textContent === errorMessage) {
-                statusMessage.nextElementSibling.remove();
+              if (statusMessage.previousSibling) {
+                return;
               }
+
               statusMessage.textContent = errorMessage;
+              console.log(statusMessage.previousSibling);
 
               setTimeout(() => {
                 statusMessage.delete();
-              }, 5000);
+              }, 1000);
               console.log(error);
             });
         } else {
@@ -315,7 +325,7 @@
             if (
               target.classList.contains("cart__form") ||
               target.localName === "input" ||
-              target.classList.contains("error")
+              target === statusMessage
             ) {
               return;
             }

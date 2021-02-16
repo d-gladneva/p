@@ -17,7 +17,10 @@ class CategoryStore {
           total: 4,
         },
         list: [...categories],
-      }));
+      }))
+      .catch((error) => {
+        console.warn(error);
+      });
   };
 
   getCategories = () => {

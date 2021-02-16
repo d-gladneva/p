@@ -18,7 +18,10 @@ class ProductStore {
           total: 4,
         },
         list: [...products],
-      }));
+      }))
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   getProducts = (categoryId) => {
