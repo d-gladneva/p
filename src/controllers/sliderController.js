@@ -9,7 +9,7 @@
     return li.repeat(q);
   };
   const dot = document.querySelector(".dot");
-  portfolioDots.insertAdjacentHTML("beforeEnd", renderDots(3));
+  portfolioDots.insertAdjacentHTML("beforeEnd", renderDots(slide.length));
 
   const slider = () => {
     const slide = document.querySelectorAll(".slider-item");

@@ -16,7 +16,7 @@
       .map((category) => {
         return `
         <section class="products__promo" id="section${category.id}">
-          <h2 class="products__promoCaption" id="${category.code}">${category.title}</h2>
+          <h2 class="products__promoCaption" id="catUnicId_${category.id}">${category.title}</h2>
           <div class="products__promoListing" id="category${category.id}"></div>
         </section>
       `;
