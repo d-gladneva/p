@@ -41,3 +41,34 @@
   color: #ee2444;
   cursor: pointer;
 }
+
+.cart__form_item {
+  width: 90%;
+}
+
+.order_coord__text,
+.order_coord__numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.coord_text__item,
+.coord_numbers__item,
+.cart__form_item {
+  height: 30px;
+  margin: 5px auto;
+  background: lightgrey;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 0 10px;
+  outline: 0;
+}
+
+.coord_text__item {
+  width: 40%;
+}
+
+.coord_numbers__item {
+  width: 24%;
+}

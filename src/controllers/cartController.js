@@ -183,10 +183,23 @@
             // onBtn();
           }
         }
-        if (elemWork.name === "name") {
+        if (
+          elemWork.name === "name" ||
+          elemWork.name === "surname" ||
+          elemWork.name === "region" ||
+          elemWork.name === "city" ||
+          elemWork.name === "street"
+        ) {
           elemWork.value = elemWork.value.replace(/[^а-яё\s]/gi, "");
         }
-        if (elemWork.name === "address") {
+        if (
+          elemWork.name === "house" ||
+          elemWork.name === "building" ||
+          elemWork.name === "apartment"
+        ) {
+          elemWork.value = elemWork.value.replace(/[^0-9]/g, "");
+        }
+        if (elemWork.name === "address" || elemWork.name === "comment") {
           elemWork.value = elemWork.value.replace(
             /[^а-яА-Я0-9 ,.?!"';:\-\%()\#]/g,
             ""
@@ -200,9 +213,20 @@
       <div><span class="modal__close" id="close">&times;</span></div>
       <form class="cart__form">
          <input class="cart__form_item" name="name" type="text" required placeholder="Ваше имя">
+         <input class="cart__form_item" name="surname" type="text" required placeholder="Ваша фамилия">
          <input class="cart__form_item" name="email" type="text" required placeholder="Ваш email">
          <input class="cart__form_item" name="phone" type="text" required placeholder="Ваш телефон">
-         <input class="cart__form_item" name="address" type="text" required placeholder="Ваш адрес">
+         <input class="cart__form_item" name="comment" type="text" required placeholder="Ваш комметарий">
+         <div class="order_coord__text">
+         <input class="coord_text__item" name="region" type="text" required placeholder="Регион">
+         <input class="coord_text__item" name="city" type="text" required placeholder="Город">
+         </div>
+         <input class="cart__form_item" name="street" type="text" required placeholder="Улица">
+         <div class="order_coord__numbers">
+         <input class="coord_numbers__item" name="house" type="text" required placeholder="Дом">
+         <input class="coord_numbers__item" name="building" type="text" required placeholder="Строение">
+         <input class="coord_numbers__item" name="apartment" type="text" required placeholder="Квартира">
+         </div>
       <button type="submit" class="global-buttonPrimary cart__buyButton cart__buyButton_order">Оформить заказ</button>
       </form>
       `;
@@ -235,11 +259,22 @@
             statusMessage.delete();
           }, 1000);
 
-          const formData = new FormData(elemWork);
-          let body = {};
-          formData.forEach((val, key) => {
-            body[key] = val;
-          });
+          const body = {
+            name: document.querySelector('input[name="name"]').value,
+            surname: document.querySelector('input[name="surname"]').value,
+            email: document.querySelector('input[name="email"]').value,
+            phone: document.querySelector('input[name="phone"]').value,
+            comment: document.querySelector('input[name="comment"]').value,
+            address: {
+              city: document.querySelector('input[name="city"]').value,
+              street: document.querySelector('input[name="street"]').value,
+              house: document.querySelector('input[name="house"]').value,
+              building: document.querySelector('input[name="building"]').value,
+              region: document.querySelector('input[name="region"]').value,
+              apartment: document.querySelector('input[name="apartment"]')
+                .value,
+            },
+          };
 
           postData(body)
             .then((response) => {
@@ -293,12 +328,19 @@
       };
 
       const postData = (body) => {
-        return fetch("./server.php", {
+        console.log(cartStore.getCartProducts());
+        return fetch("http://sole-pizza.cxz.su/api/orders", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(body),
+          body: JSON.stringify({
+            ...body,
+            items: cartStore.getCartProducts().map((i) => ({
+              product: `/api/products/${i.id}`,
+              quantity: i.count,
+            })),
+          }),
         });
       };
 
@@ -323,17 +365,14 @@
             myOrder.style.display = "flex";
             orderIsOpen = true;
           } else {
-            if (
-              target.classList.contains("cart__form") ||
-              target.localName === "input" ||
-              target === statusMessage
-            ) {
-              return;
-            }
-            if (
-              !target.classList.contains("order__content") ||
-              target.classList.contains("modal__close")
-            ) {
+            // if (
+            //   target.classList.contains('cart__form') ||
+            //   target.localName === 'input' ||
+            //   target === statusMessage
+            // ) {
+            //   return;
+            // }
+            if (target.classList.contains("modal__close")) {
               myOrder.style.display = "none";
               orderIsOpen = false;
             }

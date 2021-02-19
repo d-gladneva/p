@@ -177,16 +177,6 @@
   flex-direction: column;
 }
 
-.cart__form_item {
-  width: 90%;
-  height: 50px;
-  margin: 10px auto;
-  border: solid 1px grey;
-  border-radius: 10px;
-  padding: 0 10px;
-  outline: none;
-}
-
 @media (max-width: 575.98px) {
   .cart__body {
     top: 137px;
