@@ -4,7 +4,6 @@
       .offsetHeight;
     const menuItems = document.getElementsByClassName("scroll");
     const getPosition = (elem) => {
-      console.log(elem.getBoundingClientRect().y);
       return (
         document.documentElement.scrollTop + elem.getBoundingClientRect().y
       );
@@ -13,11 +12,8 @@
       let target = e.target;
       target = target.closest(".test");
       let targetId = target.getAttribute("the");
-      console.log(targetId);
       if (target) {
-        const targetTo = document.getElementById(
-          targetId.substring(1, targetId.length)
-        );
+        const targetTo = document.getElementById(targetId);
         const targetPosition = getPosition(targetTo);
         const offsetTargetPosition = targetPosition - 200;
         window.scrollTo({

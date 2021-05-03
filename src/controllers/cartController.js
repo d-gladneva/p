@@ -402,3 +402,7 @@
   cartButton.addEventListener("click", handleCartBodyClick);
   root.addEventListener("click", handleRootClick);
 }
+
+const div = document.querySelector("div");
+
+console.log(div);
