@@ -16,7 +16,7 @@
       .map((category) => {
         return `
         <section class="products__promo" id="section${category.id}">
-          <h2 class="products__promoCaption" id="catUnicId_${category.id}">${category.title}</h2>
+          <h2 class="products__promoCaption" id="${category.code}">${category.name}</h2>
           <div class="products__promoListing" id="category${category.id}"></div>
         </section>
       `;
@@ -32,13 +32,13 @@
     const hasInCart = cartStore.checkProduct(product.id);
 
     return `
-      <div class="products__productWrapper" id="product${
-        product.id
-      }" product-id="${product.id}">
-        <div class="products__product">
-          <img src="${product.thumbnail.small}" data-img="${
-      product.thumbnail.small
+<div class="products__productWrapper" id="product${product.id}" product-id="${
+      product.id
     }">
+        <div class="products__product">
+          <img src="${ROUTES.productImage}/${PRODUCT_IMAGE_SIZE.small}/${
+      product.image
+    }" data-img="${product.image}">
           <p class="global-caption products__productCaption">${
             product.title
           }</p>
@@ -71,10 +71,10 @@
                 ? `<span>Товар в&nbsp;корзине</span>`
                 : '<button class="global-buttonPrimary">В корзину</button>'
             }
+            </div>
           </div>
         </div>
-      </div>
-    `;
+`;
   };
 
   const productsWrapper = document.getElementById("productsWrapper");

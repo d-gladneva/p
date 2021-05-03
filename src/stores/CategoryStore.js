@@ -5,22 +5,10 @@ class CategoryStore {
   _categories;
 
   loadCategories = () => {
-    const url = `http://sole-pizza.cxz.su/api/categories`;
-    this._categories = fetch(url, {
-      headers: {
-        Accept: "application/json",
-      },
-    })
+    const url = `${ROUTES.host}/${ROUTES.models}/categories.json`;
+    this._categories = fetch(url)
       .then((data) => data.json())
-      .then((categories) => ({
-        head: {
-          total: 4,
-        },
-        list: [...categories],
-      }))
-      .catch((error) => {
-        console.warn(error);
-      });
+      .then((categories) => categories);
   };
 
   getCategories = () => {

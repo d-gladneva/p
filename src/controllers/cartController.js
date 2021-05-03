@@ -91,7 +91,9 @@
         <td class="cart__tableCell">${index + 1}</td>
         <td class="cart__tableCell">
           <img 
-            src="${product.thumbnail.small}" 
+            src="${ROUTES.productImage}/${PRODUCT_IMAGE_SIZE.small}/${
+          product.image
+        }" 
             alt="${product.title}" 
             class="cart__productImage"
           >

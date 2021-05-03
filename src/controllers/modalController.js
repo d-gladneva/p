@@ -10,7 +10,10 @@
       <div><span class="modal__close" id="close">&times;</span></div>
       <div class="modal__contentWrapper" product-id="${productData.id}">
           <h2 class="caption modal__caption">${productData.title}</h2>
-          <img src="${productData.thumbnail.medium}" class="modal__image"/>
+          <img src="${ROUTES.productImage}/${PRODUCT_IMAGE_SIZE.normal}/${
+      productData.image
+    }
+" class="modal__image"/>
           <div class="modal__infoBox">
               <p class="modal__description">${productData.description}</p>
               <div class="modal__counter">
