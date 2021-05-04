@@ -5,7 +5,7 @@ class CategoryStore {
   _categories;
 
   loadCategories = () => {
-    const url = `${ROUTES.host}/${ROUTES.models}/categories.json`;
+    const url = `https://d-gladneva.github.io/pizza/public/models/categories.json`;
     this._categories = fetch(url)
       .then((data) => data.json())
       .then((categories) => categories);

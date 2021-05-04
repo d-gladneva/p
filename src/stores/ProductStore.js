@@ -6,7 +6,7 @@ class ProductStore {
   _products;
 
   loadProducts = () => {
-    const url = `${ROUTES.host}/${ROUTES.models}/products.json`;
+    const url = `https://d-gladneva.github.io/pizza/public/models/products.json`;
     this._products = fetch(url)
       .then((data) => data.json())
       .then((products) => products);
