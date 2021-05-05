@@ -1,28 +1,29 @@
 {
-  const navLinks = document.getElementsByClassName('navigation__link');
-  const navigationHeight = document.querySelector('.header__wrapper')
+  const navLinks = document.getElementsByClassName("navigation__link");
+  const navigationHeight = document.querySelector(".header__wrapper")
     .offsetHeight;
+  console.log(navigationHeight);
 
-  const sections = document.getElementsByClassName('products__promo');
+  const sections = document.getElementsByClassName("products__promo");
 
   const getPosition = (elem) => {
     return document.documentElement.scrollTop + elem.getBoundingClientRect().y;
   };
 
   const scrollToTarget = (e) => {
-    const targetId = e.target.getAttribute('to');
+    const targetId = e.target.getAttribute("to");
     const target = document.getElementById(targetId);
     const targetPosition = getPosition(target);
     const offsetTargetPosition = targetPosition - navigationHeight;
 
     window.scrollTo({
       top: offsetTargetPosition,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
   for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener('click', scrollToTarget);
+    navLinks[i].addEventListener("click", scrollToTarget);
   }
 
   function changeColor() {
@@ -32,12 +33,12 @@
         sections[i].getBoundingClientRect().y >
           175 - sections[i].getBoundingClientRect().height - 50
       ) {
-        navLinks[i].style.color = '#822f37';
+        navLinks[i].style.color = "#822f37";
       } else {
-        navLinks[i].style.color = '#dadada';
+        navLinks[i].style.color = "#dadada";
       }
     }
   }
 
-  window.addEventListener('scroll', changeColor);
+  window.addEventListener("scroll", changeColor);
 }

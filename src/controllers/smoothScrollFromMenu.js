@@ -15,7 +15,7 @@
       if (target) {
         const targetTo = document.getElementById(targetId);
         const targetPosition = getPosition(targetTo);
-        const offsetTargetPosition = targetPosition - 200;
+        const offsetTargetPosition = targetPosition - navigationHeight;
         window.scrollTo({
           top: offsetTargetPosition,
           behavior: "smooth",
