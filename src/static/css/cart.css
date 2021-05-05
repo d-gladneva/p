@@ -196,7 +196,8 @@
     margin-left: unset;
   }
   .cart__body {
-    top: 121px;
+    top: 139px;
+    left: -2px;
   }
 }
 

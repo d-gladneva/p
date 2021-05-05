@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 135px;
 }
@@ -25,7 +25,6 @@
   fill: #dadada;
   width: 25px;
   height: 25px;
-  margin-right: 10px;
 }
 
 .header__phone_icon:hover,
@@ -79,14 +78,27 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header__phone_icon {
+    display: block;
+  }
+  .header__phone_icon > svg {
+    width: 45px;
+    height: 45px;
+  }
+  .global-phone {
+    display: none;
+  }
+}
+
 @media (max-width: 575.98px) {
   .header__wrapper {
-    height: 150px;
+    height: 151px;
     justify-content: space-around;
   }
   .phone__body {
-    top: 121px;
-    left: 11px;
+    top: 148px;
+    left: 5px;
     width: 80%;
   }
 }

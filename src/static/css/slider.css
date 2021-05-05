@@ -9,7 +9,14 @@ body ul {
 }
 
 .slider {
-  padding: 5rem 0;
+  padding: 6rem 0;
+}
+
+@media (orientation: landscape) {
+  .modal__description {
+    font-size: 18px;
+    margin-top: 10px;
+  }
 }
 
 .slider-content {

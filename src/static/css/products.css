@@ -89,6 +89,10 @@
   .products__productWrapper {
     padding: 15px 20px;
   }
+
+  .products__promoListing {
+    margin: 0 -15px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -103,6 +107,27 @@
 
   .products__productWrapper {
     padding: 15px 17px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 575.98px) {
+  .products__promoListing {
+    margin: 0 15px;
+  }
+  .modal__content {
+    height: 84%;
+  }
+
+  .modal__image {
+    width: 38%;
+    height: 25%;
+    margin: 10px auto;
+    object-fit: cover;
+  }
+
+  .modal__description {
+    font-size: 18px;
+    margin-top: 10px;
   }
 }
 
