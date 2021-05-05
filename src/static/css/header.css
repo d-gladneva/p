@@ -87,6 +87,7 @@
   }
   .phone__body {
     top: 186px;
-    left: 52px;
+    left: 11px;
+    width: 80%;
   }
 }
