@@ -23,76 +23,70 @@
       <!-- Header block -->
       <header class="global-header">
         <div class="header__wrapper" id="headerWrapper">
-          <div class="navigation__left">
-            <a href="/" class="global-logo"></a>
-            <div class="navigation__burger">
-              <span class="navigation__burger-top"></span>
-              <span class="navigation__burger-center"></span>
-              <span class="navigation__burger-bottom"></span>
-            </div>
-            <nav class="navigation__wrapper">
-              <ul class="navigation__menu">
-                <li class="navigation__item">
-                  <a class="navigation__link" to="pizza">Пицца</a>
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link" to="rolly">Роллы</a>
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link" to="classicRolly"
-                    >Классические роллы</a
-                  >
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link" to="sushi">Суши</a>
-                </li>
-              </ul>
-            </nav>
+          <a href="/" class="global-logo"></a>
+          <nav class="navigation__wrapper">
+            <ul class="navigation__menu">
+              <li class="navigation__item">
+                <a class="navigation__link" to="pizza">Пицца</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" to="rolly">Роллы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" to="classicRolly"
+                  >Классические роллы</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" to="sushi">Суши</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="navigation__burger">
+            <span class="navigation__burger-top"></span>
+            <span class="navigation__burger-center"></span>
+            <span class="navigation__burger-bottom"></span>
           </div>
-          <div class="navigation__right">
-            <a
-              class="global-phone header__phone"
-              href="callto:+7(499)113 93 88"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+          <a class="global-phone header__phone" href="callto:+7(499)113 93 88">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M497.39 361.8l-112-48a24 24 0 00-28 6.9l-49.6 60.6A370.66 370.66 0 01130.6 204.11l60.6-49.6a23.94 23.94 0 006.9-28l-48-112A24.16 24.16 0 00122.6.61l-104 24A24 24 0 000 48c0 256.5 207.9 464 464 464a24 24 0 0023.4-18.6l24-104a24.29 24.29 0 00-14.01-27.6z"
+              />
+            </svg>
+            +7(499)113-93-88
+          </a>
+          <a class="header__phone_icon" href="callto:+7(499)113 93 88">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M497.39 361.8l-112-48a24 24 0 00-28 6.9l-49.6 60.6A370.66 370.66 0 01130.6 204.11l60.6-49.6a23.94 23.94 0 006.9-28l-48-112A24.16 24.16 0 00122.6.61l-104 24A24 24 0 000 48c0 256.5 207.9 464 464 464a24 24 0 0023.4-18.6l24-104a24.29 24.29 0 00-14.01-27.6z"
+              />
+            </svg>
+          </a>
+          <div class="phone__body" id="phoneBody">
+            <p>Адрес: г. Москва, бульвар Ландау, д. 1, пом. 4</p>
+            <p>+7(499)113-93-88</p>
+            <p>E-mail: pizza@pizza.ru</p>
+          </div>
+          <div class="tooltipCart__wrapper" id="tooltipCart">
+            <span class="tooltipCart__text">Товар успешно добавлен</span>
+          </div>
+          <div class="cart__wrapper">
+            <button class="cart__button" id="cartButton">
+              <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M497.39 361.8l-112-48a24 24 0 00-28 6.9l-49.6 60.6A370.66 370.66 0 01130.6 204.11l60.6-49.6a23.94 23.94 0 006.9-28l-48-112A24.16 24.16 0 00122.6.61l-104 24A24 24 0 000 48c0 256.5 207.9 464 464 464a24 24 0 0023.4-18.6l24-104a24.29 24.29 0 00-14.01-27.6z"
-                />
+                  d="M17.6202 17.6104C18.2385 17.6104 18.7537 17.8255 19.1659 18.2559C19.5781 18.6863 19.7842 19.2113 19.7842 19.831C19.7842 20.4507 19.5781 20.9672 19.1659 21.3803C18.7537 21.7935 18.2299 22 17.5945 22C16.959 22 16.4352 21.7935 16.0231 21.3803C15.6109 20.9672 15.4048 20.4421 15.4048 19.8052C15.4048 19.1683 15.6109 18.6432 16.0231 18.2301C16.4352 17.8169 16.9676 17.6104 17.6202 17.6104ZM-0.000488281 0H3.60607L4.63651 2.16901H20.9175C21.2267 2.20344 21.4843 2.32394 21.6904 2.53052C21.8965 2.73709 21.9995 2.9953 21.9995 3.30516C21.9995 3.47731 21.948 3.64945 21.8449 3.8216L17.9293 10.9484C17.7232 11.2926 17.457 11.5681 17.1307 11.7746C16.8043 11.9812 16.4351 12.0845 16.0229 12.0845H7.83089L6.85197 13.892L6.80045 14.0469C6.80045 14.2191 6.88632 14.3052 7.05806 14.3052H19.7841V16.5258H6.59436C5.97609 16.4914 5.46087 16.2676 5.04869 15.8545C4.63651 15.4413 4.43043 14.9249 4.43043 14.3052C4.43043 13.9264 4.51629 13.5822 4.68804 13.2723L6.18218 10.5352L2.21497 2.16901H-0.000488281V0ZM6.5946 17.6104C7.21287 17.6104 7.73667 17.8255 8.16603 18.2559C8.59538 18.6863 8.81005 19.2113 8.81005 19.831C8.81005 20.4507 8.59538 20.9672 8.16603 21.3803C7.73667 21.7935 7.21287 22 6.5946 22C5.97633 22 5.46111 21.7935 5.04893 21.3803C4.63675 20.9672 4.43066 20.4421 4.43066 19.8052C4.43066 19.1683 4.63675 18.6432 5.04893 18.2301C5.46111 17.8169 5.97633 17.6104 6.5946 17.6104ZM16.4003 9.87138L19.467 4.38965H5.66699L8.22255 9.87138H16.4003Z"
+                ></path>
               </svg>
-              +7(499)113-93-88
-            </a>
-            <a class="header__phone_icon" href="callto:+7(499)113 93 88">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  d="M497.39 361.8l-112-48a24 24 0 00-28 6.9l-49.6 60.6A370.66 370.66 0 01130.6 204.11l60.6-49.6a23.94 23.94 0 006.9-28l-48-112A24.16 24.16 0 00122.6.61l-104 24A24 24 0 000 48c0 256.5 207.9 464 464 464a24 24 0 0023.4-18.6l24-104a24.29 24.29 0 00-14.01-27.6z"
-                />
-              </svg>
-            </a>
-            <div class="phone__body" id="phoneBody">
-              <p>Адрес: г. Москва, бульвар Ландау, д. 1, пом. 4</p>
-              <p>+7(499)113-93-88</p>
-              <p>E-mail: pizza@pizza.ru</p>
-            </div>
-            <div class="tooltipCart__wrapper" id="tooltipCart">
-              <span class="tooltipCart__text">Товар успешно добавлен</span>
-            </div>
-            <div class="cart__wrapper">
-              <button class="cart__button" id="cartButton">
-                <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.6202 17.6104C18.2385 17.6104 18.7537 17.8255 19.1659 18.2559C19.5781 18.6863 19.7842 19.2113 19.7842 19.831C19.7842 20.4507 19.5781 20.9672 19.1659 21.3803C18.7537 21.7935 18.2299 22 17.5945 22C16.959 22 16.4352 21.7935 16.0231 21.3803C15.6109 20.9672 15.4048 20.4421 15.4048 19.8052C15.4048 19.1683 15.6109 18.6432 16.0231 18.2301C16.4352 17.8169 16.9676 17.6104 17.6202 17.6104ZM-0.000488281 0H3.60607L4.63651 2.16901H20.9175C21.2267 2.20344 21.4843 2.32394 21.6904 2.53052C21.8965 2.73709 21.9995 2.9953 21.9995 3.30516C21.9995 3.47731 21.948 3.64945 21.8449 3.8216L17.9293 10.9484C17.7232 11.2926 17.457 11.5681 17.1307 11.7746C16.8043 11.9812 16.4351 12.0845 16.0229 12.0845H7.83089L6.85197 13.892L6.80045 14.0469C6.80045 14.2191 6.88632 14.3052 7.05806 14.3052H19.7841V16.5258H6.59436C5.97609 16.4914 5.46087 16.2676 5.04869 15.8545C4.63651 15.4413 4.43043 14.9249 4.43043 14.3052C4.43043 13.9264 4.51629 13.5822 4.68804 13.2723L6.18218 10.5352L2.21497 2.16901H-0.000488281V0ZM6.5946 17.6104C7.21287 17.6104 7.73667 17.8255 8.16603 18.2559C8.59538 18.6863 8.81005 19.2113 8.81005 19.831C8.81005 20.4507 8.59538 20.9672 8.16603 21.3803C7.73667 21.7935 7.21287 22 6.5946 22C5.97633 22 5.46111 21.7935 5.04893 21.3803C4.63675 20.9672 4.43066 20.4421 4.43066 19.8052C4.43066 19.1683 4.63675 18.6432 5.04893 18.2301C5.46111 17.8169 5.97633 17.6104 6.5946 17.6104ZM16.4003 9.87138L19.467 4.38965H5.66699L8.22255 9.87138H16.4003Z"
-                  ></path>
-                </svg>
-                <span>Корзина</span>
-                <p class="cart__sum">
-                  <span id="cartSum">0</span><span> &#8381;</span>
-                </p>
-              </button>
-            </div>
-            <div class="cart__body" id="cartBody"></div>
-            <div class="tooltipCart__wrapper" id="tooltipCart">
-              <span class="tooltipCart__text">Товар успешно добавлен</span>
-            </div>
+              <span>Корзина</span>
+              <p class="cart__sum">
+                <span id="cartSum">0</span><span> &#8381;</span>
+              </p>
+            </button>
+          </div>
+          <div class="cart__body" id="cartBody"></div>
+          <div class="tooltipCart__wrapper" id="tooltipCart">
+            <span class="tooltipCart__text">Товар успешно добавлен</span>
           </div>
         </div>
       </header>

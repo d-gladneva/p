@@ -75,7 +75,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-right: 25px;
+  }
+  .navigation__wrapper {
+    display: none;
   }
   .navigation__menu {
     display: none;
@@ -85,5 +87,8 @@
 @media (max-width: 575.98px) {
   .navigation__right {
     margin-top: 15px;
+  }
+  .navigation__wrapper {
+    display: none;
   }
 }

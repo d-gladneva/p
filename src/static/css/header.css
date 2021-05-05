@@ -13,7 +13,6 @@
   fill: #dadada;
   width: 25px;
   height: 25px;
-  margin-right: 10px;
 }
 
 .header__phone:hover,
@@ -75,7 +74,6 @@
     display: block;
   }
   .header__phone_icon > svg {
-    margin-top: 10px;
     width: 45px;
     height: 45px;
   }
@@ -84,9 +82,11 @@
 @media (max-width: 575.98px) {
   .header__wrapper {
     height: 150px;
+    justify-content: space-around;
+    box-sizing: border-box;
   }
   .phone__body {
-    top: 186px;
+    top: 121px;
     left: 11px;
     width: 80%;
   }

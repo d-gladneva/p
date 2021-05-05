@@ -192,13 +192,13 @@
   .cart__tableCell {
     height: 20px;
   }
+  .cart__wrapper {
+    margin-left: unset;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .cart__body {
-    top: 150px;
-  }
-  .cart__wrapper {
-    margin-left: 30px;
+    top: 121px;
   }
 }
