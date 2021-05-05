@@ -83,7 +83,6 @@
   .header__wrapper {
     height: 150px;
     justify-content: space-around;
-    box-sizing: border-box;
   }
   .phone__body {
     top: 121px;
