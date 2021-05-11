@@ -38,7 +38,7 @@
         <div class="products__product">
           <img src="${ROUTES.productImage}/${PRODUCT_IMAGE_SIZE.small}/${
       product.image
-    }" data-img="${product.image}">
+    }" alt="${product.title}" data-img="${product.image}">
           <p class="global-caption products__productCaption">${
             product.title
           }</p>
@@ -48,9 +48,9 @@
           <div class="products__boxCounterPrice" price="${product.price}">
             <div class="products__boxCounter">
               <button class="counter__button counter__buttonIncrease">+</button>
-              <input class="counter__input" type="number" value="${
+              <label><input class="counter__input" type="number" value="${
                 product.count || 1
-              }">
+              }"></label>
               <button class="counter__button counter__buttonDecrease">-</button>
             </div>
             <div class="products__boxPrice">
