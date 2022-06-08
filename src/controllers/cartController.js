@@ -215,20 +215,10 @@
       <div><span class="modal__close" id="close">&times;</span></div>
       <form class="cart__form">
          <input class="cart__form_item" name="name" type="text" required placeholder="Ваше имя">
-         <input class="cart__form_item" name="surname" type="text" required placeholder="Ваша фамилия">
-         <input class="cart__form_item" name="email" type="text" required placeholder="Ваш email">
-         <input class="cart__form_item" name="phone" type="text" required placeholder="Ваш телефон">
-         <input class="cart__form_item" name="comment" type="text" required placeholder="Ваш комметарий">
-         <div class="order_coord__text">
-         <input class="coord_text__item" name="region" type="text" required placeholder="Регион">
-         <input class="coord_text__item" name="city" type="text" required placeholder="Город">
-         </div>
-         <input class="cart__form_item" name="street" type="text" required placeholder="Улица">
-         <div class="order_coord__numbers">
-         <input class="coord_numbers__item" name="house" type="text" required placeholder="Дом">
-         <input class="coord_numbers__item" name="building" type="text" required placeholder="Строение">
-         <input class="coord_numbers__item" name="apartment" type="text" required placeholder="Квартира">
-         </div>
+         <input class="cart__form_item" name="email" type="text" required placeholder="Email">
+         <input class="cart__form_item" name="phone" type="text" required placeholder="Телефон">
+         <input class="cart__form_item" name="comment" type="text" placeholder="Комметарий">
+         <input class="cart__form_item" name="street" type="text" required placeholder="Адрес">
       <button type="submit" class="global-buttonPrimary cart__buyButton cart__buyButton_order">Оформить заказ</button>
       </form>
       `;
@@ -287,7 +277,6 @@
                 statusMessage.delete();
               }, 1000);
               statusMessage.textContent = succesMessage;
-              console.log(statusMessage);
 
               for (let i = 0; i < inputFormElems.length; i++) {
                 inputFormElems[i].value = "";
@@ -302,12 +291,10 @@
               }
 
               statusMessage.textContent = errorMessage;
-              console.log(statusMessage.previousSibling);
 
               setTimeout(() => {
                 statusMessage.delete();
               }, 1000);
-              console.log(error);
             });
         } else {
           for (let i = 0; i < inputFormElems.length; i++) {
@@ -330,7 +317,6 @@
       };
 
       const postData = (body) => {
-        console.log(cartStore.getCartProducts());
         return fetch("http://sole-pizza.cxz.su/api/orders", {
           method: "POST",
           headers: {
@@ -406,5 +392,3 @@
 }
 
 const div = document.querySelector("div");
-
-console.log(div);
