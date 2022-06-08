@@ -1,5 +1,6 @@
 {
   const portfolioDots = document.querySelector(".slider-dots");
+  const slides = document.querySelector(".slider-item");
   const slide = document.querySelectorAll(".slider-item");
 
   const renderDots = (q) => {
@@ -8,6 +9,14 @@
         `;
     return li.repeat(q);
   };
+
+  const renderSlides = (q) => {
+    const li = `
+            <li class="dot"></li>
+        `;
+    return li.repeat(q);
+  };
+
   const dot = document.querySelector(".dot");
   portfolioDots.insertAdjacentHTML("beforeEnd", renderDots(slide.length));
 

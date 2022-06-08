@@ -2,7 +2,6 @@
   const navLinks = document.getElementsByClassName("navigation__link");
   const navigationHeight = document.querySelector(".header__wrapper")
     .offsetHeight;
-  console.log(navigationHeight);
 
   const sections = document.getElementsByClassName("products__promo");
 
@@ -29,9 +28,9 @@
   function changeColor() {
     for (let i = 0; i < sections.length; i++) {
       if (
-        sections[i].getBoundingClientRect().y <= 175 &&
+        sections[i].getBoundingClientRect().y <= 185 &&
         sections[i].getBoundingClientRect().y >
-          175 - sections[i].getBoundingClientRect().height - 50
+          185 - sections[i].getBoundingClientRect().height - 50
       ) {
         navLinks[i].style.color = "#822f37";
       } else {

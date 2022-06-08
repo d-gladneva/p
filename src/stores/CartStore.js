@@ -86,7 +86,7 @@ class CartStore {
     const index = this._productList.findIndex((product) => product.id === id);
     this._productList.splice(index, 1, {
       ...this._productList[index],
-      ...newProductDate
+      ...newProductDate,
     });
     this.calculateCartSum();
     this.calculateCartTotalCount();

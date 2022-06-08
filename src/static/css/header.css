@@ -93,11 +93,11 @@
 
 @media (max-width: 575.98px) {
   .header__wrapper {
-    height: 151px;
+    height: 99px;
     justify-content: space-around;
   }
   .phone__body {
-    top: 148px;
+    top: 113px;
     left: 5px;
     width: 80%;
   }
